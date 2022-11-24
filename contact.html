@@ -1,5 +1,6 @@
 <html lang="en">
   <head>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact.php">
     <link rel="shortcut icon" href="R.jpg" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,41 +67,25 @@ input[type=submit]:hover {
 <h3>Contact Form (Currently In Development)</h3>
 
 <div class="container">
-  <form action="https://thegr8coder.github.io/Me/error.html">
-    <label for="fn">First Name</label>
-    <input type="text" id="fn" name="fn" placeholder="Your First Name">
-
-    <label for="ln">Last Name</label>
-    <input type="text" id="ln" name="ln" placeholder="Your Last Name">
-
-    <label for="c">Country</label>
-    <select id="c" name="c">
-    <option value="cc">---Choose Country/Reigion---</option>
-    <option value="af.">Africa</option>
-    <option value="n.a.">Asia | Northern Asia (Russia)</option>
-    <option value="c.a.">Asia | Central Asia (Kazakhstan, Kyrgzstan, Tajikistan, Turkmenistan & Uzbekistan)</option>
-    <option value="e.a.">Asia | Eastern Asia (China, (China) Hong Kong, (China) Macao, Japan, Mongolia, North Korea & South Korea)</option>
-    <option value="s.a.">Asia | Southern Asia (Afghanistan, Bangladesh, Bhutan, India, Iran, Maldives, Nepal, Pakistan & Sri Lanka)</option>
-    <option value="se.a.">Asia | SouthEast Asia (Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Timor-Leste & Vietnam)</option>
-    <option value="me.a.">Asia | Middle East/West Asia (Armenia, Azerbaijan, Bahrain, Cyprus, Georgia, Iraq, Israel, Jordan, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia,
-     Palestine, Syrian Arab Republic, Turkey & United Arab Emirates)</option>
-      <option value="au.&oc.">Australia & Oceania</option>
-      <option value="n.e.">Europe | Northern Europe (Denmark, Estonia, Finland, Iceland, Latvia, Lithuania, Norway & Sweden)</option>
-      <option value="ce.e.">Europe | Central and Eastern Europe (Belarus, Bulgaria, the Czech Republic, Hungary, Moldova, Poland, Romania, Slovakia, Ukraine & Western Russia)</option>
-      <option value="w.e.">Europe | Western Europe (Austria, Belgium, France, Germany, Liechtenstein, Luxembourg, Monaco, Netherlands & Switzerland)</option>
-      <option value="s.e.">Europe | Southern Europe</option>
-      <option value="s.e.">Europe | Others (Which I Have Missed Due To Confusion In Reigions Like The U.K.)</option>
-      <option value="n.a.-ca.">North America | Canada</option>
-      <option value="n.a.-us.">North America | USA</option>
-      <option value="n.a.">North America | Others</option>
-      <option value="s.a.">South America</option>
-    </select>
-
-    <label for="m">Message</label>
-    <textarea id="m" name="m" placeholder="Type Your Message Here->" style="height:200px"></textarea>
-
-    <input type="submit" value="Submit ✓">
-  </form>
+  <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
 </div>
 
 尺ㄩ丂卄丨ㄥ ㄖ爪卂尺</p>
